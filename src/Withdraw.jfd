@@ -1,0 +1,44 @@
+JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :::x, comp Lwithdraw:::p:264:p, space :p:62:p}, seq l {space :::p, par l:::p {seq l {comp Ldate:::p::p, space :::p, comp Tdate:::::x}, comp Lamount:::p::p}, space :::p, par l {seq {comp Bwithdraw:::p:102:p, space :::p, comp Bback:::p::p}, comp Tamount:::p:127:p}, space :20:37:x}}"
+			"$verticalGroup": "par l {seq l {space :p:16:p, comp Lwithdraw:::p:50:p, space :::p, par b {comp Ldate::b:p:30:p, comp Tdate::b:p::p}, space :p:24:p, par t {comp Lamount:::p:37:p, comp Tamount:::p::p}, space :p:15:p, par b {comp Bwithdraw::b:p::p, comp Bback::b:p::p}, space ::60:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Lwithdraw"
+				"text": "Welcome To The Withdraw Section"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Ldate"
+				"text": "Date :"
+			} )
+			add( new FormComponent( "javax.swing.JFormattedTextField" ) {
+				name: "Tdate"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Lamount"
+				"text": "Enter the amount to withdraw :"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Tamount"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bwithdraw"
+				"text": "Withdraw"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bback"
+				"text": "Back"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

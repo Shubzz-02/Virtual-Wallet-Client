@@ -1,0 +1,162 @@
+JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq t {space :p:46:p, par l {seq l {par l {seq {comp lgender:::p:50:p, space :p:36:p, comp label4:::p::p}, seq l {par l {comp fn::l:p::p, comp ln::l:p::p, comp laddr::l:p::p, comp ldob:::p::p, comp occ::l:p::p, comp adno:::p::p, comp mob:::p::p, comp lnation::l:p:66:p, comp label2::l:p::p}, space :p:191:p, par t:::p {comp nationality::l:p::p, comp ano::t:::x, comp lname::l:::x, seq l {comp female:::p::p, space :::x, comp male:::p::p}, comp fname::l:::x, comp scrollPane1::l:::x, seq l {comp date:::p:49:p, space :::p, comp month:::p:59:p, space :::p, comp year::::0:x}, comp oc::l:::x, comp password::l:::x, seq t {comp plus91:::p:36:p, space :::p, comp mno:::p:153:p}}}, seq t {space :p:210:p, comp aclabel:::p:139:p, space u:::p, comp accno:::p:128:p}}, space :0:62:x}, seq l {space ::385:x, comp save:::p::p, space s:::p, comp edit:::p::p}}, space s:::p, par l {par l {seq {comp deleteAc:::p::p, space u:::p, comp back:::p::p}, par l:t {comp lamount:::p::p, comp imagelabel:::p:114:p, comp amount::l:p:104:p}}, comp browse::t:p:114:p}, space :::p}}"
+			"$verticalGroup": "par l {seq t {space :::x, par b {comp back::b:p::p, comp deleteAc::b:p::p, comp edit::b:p::p, comp save::b:p::p}, space :p:20:p}, seq t {space :::p, par b {comp aclabel::b:p::p, comp accno::b:p::p}, space :p:2:p, par l {seq {par b {comp fn::b:p::p, comp fname::b:p::p}, space u:::p, par b {comp ln::b:p::p, comp lname::b:p::p}, space :::p, par b {comp laddr::b:p::p, comp scrollPane1::b:p:61:p}, space s:::p, par l {comp mob:::p::p, par b {comp browse::b:p::p, comp mno::b:p::p, comp plus91::b:p::p}}, par l {seq l {space s:::p, comp adno:::p::p, space :p:27:p, comp label4:::p::p}, seq l {space :p:12:p, comp ano:::p:24:p, space :p:24:p, par b {comp female::b:p::p, comp male::b:p::p, comp lgender::b:p::p}}}, space s:::p, par l {comp lnation:::p::p, comp nationality:::p::p}, space ::29:x, par l {comp ldob::t:p::p, par b:t {comp date::b:p::p, comp month::b:p::p, comp year::b:p::p}}}, seq {comp imagelabel:::p:106:p, space :p:69:p, comp lamount:::p::p, space s:::p, comp amount:::p::p, space :0:109:x}}, space :p:28:p, par l {comp occ:::p::p, comp oc:::p::p}, space u:::p, par b {comp label2::b:p::p, comp password::b:p::p}, space :p:81:p}}"
+		} ) {
+			name: "this"
+			"resizable": false
+			"background": new java.awt.Color( 0, 193, 202, 255 )
+			"foreground": sfield java.awt.Color black
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fn"
+				"text": "First Name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fname"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ln"
+				"text": "Last Name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "lname"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "laddr"
+				"text": "Permanent Address"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mob"
+				"text": "Mobile No"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "adno"
+				"text": "Adhaar Number"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lgender"
+				"text": "Gender"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ldob"
+				"text": "Date Of Birth"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "occ"
+				"text": "Occupation"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ano"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "oc"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "mno"
+				"editable": false
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+					"background": new java.awt.Color( 204, 255, 204, 255 )
+					"editable": false
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "male"
+				"text": "Male"
+				"enabled": false
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "female"
+				"text": "Female"
+				"enabled": false
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "date"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "month"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "year"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "imagelabel"
+				"border": new javax.swing.border.BevelBorder( 1, null, null, null, null )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "browse"
+				"text": "Browse Image"
+				"visible": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lnation"
+				"text": "Nationality"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "nationality"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "password"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "edit"
+				"text": "Edit"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "deleteAc"
+				"text": "Delete Account"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "save"
+				"text": "Save"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "back"
+				"text": "Back"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "plus91"
+				"text": "+91"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "aclabel"
+				"text": "ACCOUNT NUMBER: "
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "accno"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lamount"
+				"text": "Amount:"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "amount"
+				"editable": false
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 820, 575 )
+		} )
+	}
+}

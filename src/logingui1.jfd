@@ -1,0 +1,47 @@
+JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq {space :p:158:p, comp Llogin:::p:70:p}, seq l {space :p:61:p, par t {seq {comp Laccno:::p:99:p, space :::p, comp userField:::p:119:p}, seq {comp Lpass:::p:91:p, space u:::p, comp passwordField:::p:121:p}, comp Blogin::t:p::p, seq l {comp Lneed:::p::p, space u:::p, comp Bsignup:::p::p}}}}, space ::113:x}}"
+			"$verticalGroup": "par l {seq l {comp Llogin:::p:38:p, space :::p, par b {comp Laccno::b:p:24:p, comp userField::b:p::p}, space u:::p, par b {comp Lpass::b:p:27:p, comp passwordField::b:p::p}, space u:::p, comp Blogin:::p:33:p, space s:::p, par l {comp Lneed:::p::p, comp Bsignup:::p::p}, space :0:74:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Llogin"
+				"text": "LOGIN"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Laccno"
+				"text": "Account Number :"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Lpass"
+				"text": "Password :"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "userField"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Blogin"
+				"text": "LOGIN"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Lneed"
+				"text": "Need a new account"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bsignup"
+				"text": "sign up"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "signUp", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}

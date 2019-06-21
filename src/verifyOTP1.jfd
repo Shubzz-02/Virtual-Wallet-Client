@@ -1,0 +1,67 @@
+JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JDialog", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"resizable": false
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "dialogPane"
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq l {space :::p, par t {comp send:::p::p, seq {comp mob:::p::p, space :p:40:p, comp plus91:::p:42:p, space :::p, comp mno:::p:143:p}}, space ::36:x}}"
+					"$verticalGroup": "par l {seq {space :p:21:p, par b {comp mno::b:p::p, comp mob::b:p::p, comp plus91::b:p::p}, space u:::p, comp send:::p::p, space ::16:x}}"
+				} ) {
+					name: "contentPanel"
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "mob"
+						"text": "Mobile Number"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "mno"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "plus91"
+						"text": "+91"
+						"editable": false
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "send"
+						"text": "Send OTP!"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "North"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+					"$horizontalGroup": "par l {seq {space :p:197:p, comp ok:::p::p, space :::p, comp cancel:::p::p, space ::12:x}, seq l {space :::p, comp lotp:::p:99:p, space ::81:x, comp otp:::p:142:p, space :p:35:p}}"
+					"$verticalGroup": "par l {seq t {space ::17:x, par b {comp lotp::b:p::p, comp otp::b:p::p}, space u:::p, par b {comp ok::b:p::p, comp cancel::b:p::p}, space :::p}}"
+				} ) {
+					name: "buttonBar"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "ok"
+						"text": "OK"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "cancel"
+						"text": "Cancel"
+					} )
+					add( new FormComponent( "javax.swing.JLabel" ) {
+						name: "lotp"
+						"text": "Enter OTP"
+					} )
+					add( new FormComponent( "javax.swing.JTextField" ) {
+						name: "otp"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "South"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 180, 55 )
+			"size": new java.awt.Dimension( 365, 205 )
+		} )
+	}
+}

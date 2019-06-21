@@ -1,0 +1,141 @@
+JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {space :p:171:p, comp register:::p::p, space :p:60:p, comp clear:::p::p, space :p:62:p, comp exit:::p::p, space :0:198:x}, seq l {space :p:46:p, par l {comp fn::l:p::p, comp ln::l:p::p, comp laddr::l:p::p, comp ldob:::p::p, comp occ::l:p::p, comp adno:::p::p, comp mob:::p::p, comp lnation::l:p:66:p, comp label2::l:p::p, par t:l::p {comp mail::l:::x, seq {comp lgender:::p:50:p, space :p:36:p, comp label4:::p::p}}}, space :p:191:p, par t:::p {comp nationality::l:p::p, comp ano::t:::x, comp lname::l:::x, seq l {comp female:::p::p, space :::x, comp male:::p::p}, comp fname::l:::x, comp scrollPane1::l:::x, seq l {comp date:::p:49:p, space :::p, comp month:::p:59:p, space :::p, comp year::::0:x}, comp oc::l:::x, seq t {comp plus91:::p:37:p, space :::p, comp mno:::p:147:p}, comp password::t:::x, comp email::l:::x}, space ::33:x, par l {comp label1::t:p:114:p, comp browse::t:p:114:p}, space :::p}}"
+			"$verticalGroup": "par l {seq l {par l {seq {space :p:26:p, par b {comp fn::b:p::p, comp fname::b:p::p}, space u:::p, par b {comp ln::b:p::p, comp lname::b:p::p}, space :::p, par b {comp laddr::b:p::p, comp scrollPane1::b:p:61:p}}, seq t {space :p:47:p, comp label1:::p:106:p}}, par l {seq {space s:::p, par l {comp mob:::p::p, par b {comp mno::b:p::p, comp plus91::b:p::p}}, par l {seq l {space s:::p, comp adno:::p::p, space :p:27:p, comp label4:::p::p}, seq l {space :p:12:p, comp ano:::p:24:p, space :p:24:p, par b {comp female::b:p::p, comp male::b:p::p, comp lgender::b:p::p}}}}, seq l {space :p:33:p, comp browse:::p::p}}, space s:::p, par l {comp lnation:::p::p, comp nationality:::p::p}, space ::45:x, par l {seq {par l {comp ldob::t:p::p, par b:t {comp date::b:p::p, comp month::b:p::p, comp year::b:p::p}}, space :p:28:p, par l {comp occ:::p::p, comp oc:::p::p}, space ::21:x, comp mail:::p::p, space s:::p, comp label2:::p::p}, seq {space :0:93:x, comp email:::p::p, space :::p, comp password:::p::p}}, space :p:22:p, par b {comp register::b:p::p, comp clear::b:p::p, comp exit::b:p::p}, space :p:20:p}}"
+		} ) {
+			name: "this"
+			"resizable": false
+			"background": new java.awt.Color( 0, 193, 202, 255 )
+			"foreground": sfield java.awt.Color black
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "fn"
+				"text": "Enter First Name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "fname"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ln"
+				"text": "Enter Last Name"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "lname"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "laddr"
+				"text": "Enter Permanent Address"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mob"
+				"text": "MobileNo"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "adno"
+				"text": "Adhaar Number"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lgender"
+				"text": "Gender"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "ldob"
+				"text": "Date Of Birth"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "occ"
+				"text": "Occupation"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "ano"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "oc"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "mno"
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrollPane1"
+				add( new FormComponent( "javax.swing.JTextArea" ) {
+					name: "textArea1"
+					"background": new java.awt.Color( 204, 255, 204, 255 )
+				} )
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "male"
+				"text": "Male"
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "female"
+				"text": "Female"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "date"
+				"editable": true
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "month"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "year"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "ADD IMAGE"
+				"border": new javax.swing.border.BevelBorder( 1, null, null, null, null )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "browse"
+				"text": "Browse Image"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lnation"
+				"text": "Nationality"
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "nationality"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "Password"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "password"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "plus91"
+				"text": "+91"
+				"editable": false
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "mail"
+				"text": "Email"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "email"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "register"
+				"text": "Register"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "clear"
+				"text": "Clear"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "exit"
+				"text": "Exit"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 15, 0 )
+			"size": new java.awt.Dimension( 715, 605 )
+		} )
+	}
+}

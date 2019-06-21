@@ -1,0 +1,50 @@
+JFDML JFormDesigner: "6.0.4.1.172" Java: "1.8.0_152-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq {par l {seq l {space :p:143:p, comp label1:::p:75:p}, seq l {space :p:14:p, par l {comp Lacc::l:p::p, par t:l {comp Lamount:::p::p, comp Lreacc:::p::p}}, space :::p, par l {seq {comp Btransfer:::p::p, space :::p, comp Bcancel:::p::p}, par l:::p {comp Tacc::::189:x, comp Treacc::::189:x, comp Tamount::l:p:87:p}}}}, space ::96:x}}"
+			"$verticalGroup": "par l {seq l {space :p:18:p, comp label1:::p:29:p, space :::p, par b {comp Lacc::b:p::p, comp Tacc::b:p::p}, space :::p, par l {comp Lreacc:::p::p, comp Treacc:::p::p}, par l {seq {space :p:22:p, comp Lamount:::p::p}, seq l {space s:::p, comp Tamount:::p::p}}, space :p:33:p, par b {comp Btransfer::b:p::p, comp Bcancel::b:p::p}, space ::38:x}}"
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "TRANSFER "
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Lacc"
+				"text": "Account number :"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Tacc"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Lreacc"
+				"text": "Re-Enter :"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Treacc"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "Lamount"
+				"text": "Amount :"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "Tamount"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Btransfer"
+				"text": "Transfer"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "Bcancel"
+				"text": "Cancel"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 400, 300 )
+		} )
+	}
+}
